@@ -57,7 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				F5C881B123206CD100F95198 /* AppDelegate.swift */,
-				F5C881C623206EEE00F95198 /* GigsTableViewController.swift */,
+				F5C881C82320700900F95198 /* View Controller */,
 				F5C881B523206CD100F95198 /* Main.storyboard */,
 				F5C881BB23206CD100F95198 /* Assets.xcassets */,
 				F5C881BD23206CD100F95198 /* LaunchScreen.storyboard */,
@@ -65,6 +65,14 @@
 				F5C881B823206CD100F95198 /* Gigs.xcdatamodeld */,
 			);
 			path = Gigs;
+			sourceTree = "<group>";
+		};
+		F5C881C82320700900F95198 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5C881C623206EEE00F95198 /* GigsTableViewController.swift */,
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
