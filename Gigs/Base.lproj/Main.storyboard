@@ -65,7 +65,32 @@
                     <view key="view" contentMode="scaleToFill" id="QvZ-6o-tC0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kHU-sm-vpO">
+                                <rect key="frame" x="20" y="120" width="374" height="68"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jZ8-M6-xGo">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ruT-bK-zCO">
+                                        <rect key="frame" x="0.0" y="38" width="374" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kHU-sm-vpO" firstAttribute="centerX" secondItem="QvZ-6o-tC0" secondAttribute="centerX" id="dlP-vQ-Ip1"/>
+                            <constraint firstItem="kHU-sm-vpO" firstAttribute="leading" secondItem="T3b-RM-JRd" secondAttribute="leading" constant="20" id="fiV-Gn-ufT"/>
+                            <constraint firstItem="kHU-sm-vpO" firstAttribute="top" secondItem="T3b-RM-JRd" secondAttribute="top" constant="76" id="iVX-zP-hPs"/>
+                            <constraint firstItem="T3b-RM-JRd" firstAttribute="trailing" secondItem="kHU-sm-vpO" secondAttribute="trailing" constant="20" id="jp6-jm-lE5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="T3b-RM-JRd"/>
                     </view>
                 </viewController>
