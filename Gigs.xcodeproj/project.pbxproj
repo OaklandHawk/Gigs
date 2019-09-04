@@ -13,6 +13,7 @@
 		F5C881BC23206CD100F95198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5C881BB23206CD100F95198 /* Assets.xcassets */; };
 		F5C881BF23206CD100F95198 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5C881BD23206CD100F95198 /* LaunchScreen.storyboard */; };
 		F5C881C723206EEE00F95198 /* GigsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C881C623206EEE00F95198 /* GigsTableViewController.swift */; };
+		F5C881CA232072A300F95198 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C881C9232072A300F95198 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F5C881BE23206CD100F95198 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5C881C023206CD100F95198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5C881C623206EEE00F95198 /* GigsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigsTableViewController.swift; sourceTree = "<group>"; };
+		F5C881C9232072A300F95198 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				F5C881C623206EEE00F95198 /* GigsTableViewController.swift */,
+				F5C881C9232072A300F95198 /* LoginViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5C881CA232072A300F95198 /* LoginViewController.swift in Sources */,
 				F5C881BA23206CD100F95198 /* Gigs.xcdatamodeld in Sources */,
 				F5C881B223206CD100F95198 /* AppDelegate.swift in Sources */,
 				F5C881C723206EEE00F95198 /* GigsTableViewController.swift in Sources */,

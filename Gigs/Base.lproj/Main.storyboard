@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="1066.6666666666667" y="192.85714285714286"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="Gu3-a1-eFj">
             <objects>
-                <viewController id="MYS-A8-uRB" sceneMemberID="viewController">
+                <viewController id="MYS-A8-uRB" customClass="LoginViewController" customModule="Gigs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QvZ-6o-tC0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
