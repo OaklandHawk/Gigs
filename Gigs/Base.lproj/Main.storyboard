@@ -107,6 +107,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="T3b-RM-JRd"/>
                     </view>
+                    <connections>
+                        <outlet property="loginSegmentControl" destination="6Mn-pF-Df6" id="hYw-EX-7PY"/>
+                        <outlet property="passwordTextField" destination="ruT-bK-zCO" id="Wiz-Hc-iXS"/>
+                        <outlet property="signUpButton" destination="avA-me-v6l" id="PMO-BI-vNh"/>
+                        <outlet property="usernameTextField" destination="jZ8-M6-xGo" id="JRW-7T-1nk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="az8-cx-DHg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
