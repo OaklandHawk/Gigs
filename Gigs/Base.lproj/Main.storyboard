@@ -87,6 +87,9 @@
                                             <segment title="Log In"/>
                                             <segment title="Sign Up"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="loginSignUpSwitch:" destination="MYS-A8-uRB" eventType="valueChanged" id="WUS-Oo-ca0"/>
+                                        </connections>
                                     </segmentedControl>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avA-me-v6l">
                                         <rect key="frame" x="0.0" y="112" width="374" height="30"/>

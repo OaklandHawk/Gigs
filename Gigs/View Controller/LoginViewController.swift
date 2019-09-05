@@ -8,7 +8,15 @@
 
 import UIKit
 
+enum LoginType {
+	case signUp
+	case logIn
+}
+
+
 class LoginViewController: UIViewController {
+	
+	var loginType = LoginType.signUp
 	
 	@IBOutlet weak var usernameTextField: UITextField!
 	@IBOutlet weak var passwordTextField: UITextField!
@@ -23,6 +31,16 @@ class LoginViewController: UIViewController {
     }
     
 
-   
+	@IBAction func loginSignUpSwitch(_ sender: UISegmentedControl) {
+		guard let sender = sender as? UISegmentedControl else { return }
+		if sender.selectedSegmentIndex == 0{
+			loginType = .signUp
+			signUpButton.setTitle("Sign Up", for: .normal)
+		} else {
+			loginType = .logIn
+			signUpButton.setTitle("Log In", for: .normal)
+		}
+	}
+	
 
 }
