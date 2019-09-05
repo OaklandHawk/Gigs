@@ -110,5 +110,49 @@ class GigController {
 			}
 		}.resume()
 	}
+	
+	func gettingGigs(completion: @escaping (Error?) -> Void) {
+		
+		guard let bearer = bearer else {
+			completion(NSError(domain: "No bearer", code: -1, userInfo: nil))
+			return
+		}
+		
+		let gigURL = baseURL.appendingPathComponent("gigs")
+		
+		var request = URLRequest(url: gigURL)
+		request.httpMethod = HTTPMethod.get.rawValue
+		request.addValue("Bearer \(bearer.token)", forHTTPHeaderField: "Authorization")
+		
+		URLSession.shared.dataTask(with: request) { (data, response, error) in
+			if let response = response as? HTTPURLResponse,
+				response.statusCode != 200 {
+				completion(NSError(domain: "Status code is not 200", code: -2, userInfo: nil))
+				return
+			}
+			
+			if let error = error {
+				completion(error)
+			}
+			guard let data = data else {
+				completion(error)
+				return
+			}
+			
+			let decoder = JSONDecoder()
+			decoder.dateDecodingStrategy = .iso8601
+			
+			do {
+				let allGig = try decoder.decode([Gig].self, from: data)
+				self.gigs = allGig
+				completion(nil)
+			} catch {
+				NSLog("Error decoding: \(error)")
+				completion(error)
+				return
+			}
+			
+		}.resume()
+	}
 }
 

@@ -17,6 +17,16 @@ class GigsTableViewController: UITableViewController {
 
 		
     }
+	
+	override func viewDidAppear(_ animated: Bool) {
+		super.viewDidAppear(animated)
+		
+		if gigController.bearer == nil {
+			performSegue(withIdentifier: "LoginModalSegue", sender: nil)
+		} else {
+			GigController.gettingGigs
+		}
+	}
 
     // MARK: - Table view data source
 
