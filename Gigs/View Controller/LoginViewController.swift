@@ -16,8 +16,7 @@ enum LoginType {
 
 class LoginViewController: UIViewController {
 	
-	
-	
+	var gigController: GigController!
 	var loginType = LoginType.signUp
 	
 	@IBOutlet weak var usernameTextField: UITextField!
