@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F5B6DCA62321594F0065BCFB /* Gig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B6DCA52321594F0065BCFB /* Gig.swift */; };
 		F5C881B223206CD100F95198 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C881B123206CD100F95198 /* AppDelegate.swift */; };
 		F5C881B723206CD100F95198 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5C881B523206CD100F95198 /* Main.storyboard */; };
 		F5C881BA23206CD100F95198 /* Gigs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5C881B823206CD100F95198 /* Gigs.xcdatamodeld */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F5B6DCA52321594F0065BCFB /* Gig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gig.swift; sourceTree = "<group>"; };
 		F5C881AE23206CD100F95198 /* Gigs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gigs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5C881B123206CD100F95198 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5C881B623206CD100F95198 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			children = (
 				F5C881CC2320893C00F95198 /* User.swift */,
 				F5C881D123208A9100F95198 /* Bearer.swift */,
+				F5B6DCA52321594F0065BCFB /* Gig.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				F5C881CA232072A300F95198 /* LoginViewController.swift in Sources */,
 				F5C881BA23206CD100F95198 /* Gigs.xcdatamodeld in Sources */,
 				F5C881B223206CD100F95198 /* AppDelegate.swift in Sources */,
+				F5B6DCA62321594F0065BCFB /* Gig.swift in Sources */,
 				F5C881D223208A9100F95198 /* Bearer.swift in Sources */,
 				F5C881CD2320893C00F95198 /* User.swift in Sources */,
 				F5C881C723206EEE00F95198 /* GigsTableViewController.swift in Sources */,

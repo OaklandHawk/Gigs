@@ -27,6 +27,7 @@ enum NetworkError: Error {
 class GigController {
 	
 	var bearer: Bearer?
+	var gigs: [Gig] = []
 	
 	let baseURL = URL(string: "https://lambdagigs.vapor.cloud/api")!
 	
