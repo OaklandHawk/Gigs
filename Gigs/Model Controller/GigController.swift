@@ -155,5 +155,48 @@ class GigController {
 			
 		}.resume()
 	}
+	
+	func createGig(title: String, description: String, dueDate: Date, completion: @escaping (Error?) -> Void) {
+		
+		guard let bearer = bearer else {
+			completion(NSError(domain: "No bearer", code: -1, userInfo: nil))
+			return
+		}
+		
+		let gig = Gig(title: title, description: description, dueDate: dueDate)
+		
+		let newGigURL = baseURL.appendingPathComponent("gigs")
+		
+		var request = URLRequest(url: newGigURL)
+		request.httpMethod = HTTPMethod.post.rawValue
+		request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+		request.addValue("Bearer \(bearer.token)", forHTTPHeaderField: "Authorization")
+		
+		do {
+			let encoder = JSONEncoder()
+			encoder.dateEncodingStrategy = .iso8601
+			request.httpBody = try encoder.encode(gig)
+		} catch {
+			completion(error)
+			return
+		}
+		
+		URLSession.shared.dataTask(with: request) { (data, response, error) in
+			if let response = response as? HTTPURLResponse,
+				response.statusCode != 200 {
+				completion(NSError(domain: "Status code is not 200", code: -2, userInfo: nil))
+				return
+			}
+			
+			if let error = error {
+				completion(error)
+				return
+			}
+			
+			self.gigs.append(gig)
+			completion(nil)
+			
+		}.resume()
+	}
 }
 
