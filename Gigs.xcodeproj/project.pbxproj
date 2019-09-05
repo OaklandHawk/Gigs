@@ -14,6 +14,7 @@
 		F5C881BF23206CD100F95198 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5C881BD23206CD100F95198 /* LaunchScreen.storyboard */; };
 		F5C881C723206EEE00F95198 /* GigsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C881C623206EEE00F95198 /* GigsTableViewController.swift */; };
 		F5C881CA232072A300F95198 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C881C9232072A300F95198 /* LoginViewController.swift */; };
+		F5C881CD2320893C00F95198 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C881CC2320893C00F95198 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F5C881C023206CD100F95198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5C881C623206EEE00F95198 /* GigsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigsTableViewController.swift; sourceTree = "<group>"; };
 		F5C881C9232072A300F95198 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F5C881CC2320893C00F95198 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				F5C881B123206CD100F95198 /* AppDelegate.swift */,
+				F5C881CB2320892C00F95198 /* Models */,
 				F5C881C82320700900F95198 /* View Controller */,
 				F5C881B523206CD100F95198 /* Main.storyboard */,
 				F5C881BB23206CD100F95198 /* Assets.xcassets */,
@@ -76,6 +79,14 @@
 				F5C881C9232072A300F95198 /* LoginViewController.swift */,
 			);
 			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		F5C881CB2320892C00F95198 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F5C881CC2320893C00F95198 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +163,7 @@
 				F5C881CA232072A300F95198 /* LoginViewController.swift in Sources */,
 				F5C881BA23206CD100F95198 /* Gigs.xcdatamodeld in Sources */,
 				F5C881B223206CD100F95198 /* AppDelegate.swift in Sources */,
+				F5C881CD2320893C00F95198 /* User.swift in Sources */,
 				F5C881C723206EEE00F95198 /* GigsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
